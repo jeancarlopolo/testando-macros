@@ -47,53 +47,53 @@ struct txtStruct
 };
 
 #define _FORMA_DECLARAR_IMPLEMENTACAO(tipo, nomestruct) \
-    double get##tipo##X(tipo f)                        \
-    {                                                  \
-        return ((struct nomestruct *)f)->x;            \
-    }                                                  \
-    double get##tipo##Y(tipo f)                        \
-    {                                                  \
-        return ((struct nomestruct *)f)->y;            \
-    }                                                  \
-    double get##tipo##Id(tipo f)                       \
-    {                                                  \
-        return ((struct nomestruct *)f)->id;           \
-    }                                                  \
-    double get##tipo##Rotacao(tipo f)                  \
-    {                                                  \
-        return ((struct nomestruct *)f)->rotacao;      \
-    }                                                  \
-    char *get##tipo##Corb(tipo f)                      \
-    {                                                  \
-        return ((struct nomestruct *)f)->corb;         \
-    }                                                  \
-    char *get##tipo##Corp(tipo f)                      \
-    {                                                  \
-        return ((struct nomestruct *)f)->corp;         \
-    }                                                  \
-    void set##tipo##X(tipo f, double x)                \
-    {                                                  \
-        ((struct nomestruct *)f)->x = x;               \
-    }                                                  \
-    void set##tipo##Y(tipo f, double y)                \
-    {                                                  \
-        ((struct nomestruct *)f)->y = y;               \
-    }                                                  \
-    void set##tipo##Id(tipo f, double id)              \
-    {                                                  \
-        ((struct nomestruct *)f)->id = id;             \
-    }                                                  \
-    void set##tipo##Rotacao(tipo f, double rotacao)    \
-    {                                                  \
-        ((struct nomestruct *)f)->rotacao = rotacao;   \
-    }                                                  \
-    void set##tipo##Corb(tipo f, char *corb)           \
-    {                                                  \
-        ((struct nomestruct *)f)->corb = corb;         \
-    }                                                  \
-    void set##tipo##Corp(tipo f, char *corp)           \
-    {                                                  \
-        ((struct nomestruct *)f)->corp = corp;         \
+    double get##tipo##X(tipo f)                         \
+    {                                                   \
+        return ((struct nomestruct *)f)->x;             \
+    }                                                   \
+    double get##tipo##Y(tipo f)                         \
+    {                                                   \
+        return ((struct nomestruct *)f)->y;             \
+    }                                                   \
+    double get##tipo##Id(tipo f)                        \
+    {                                                   \
+        return ((struct nomestruct *)f)->id;            \
+    }                                                   \
+    double get##tipo##Rotacao(tipo f)                   \
+    {                                                   \
+        return ((struct nomestruct *)f)->rotacao;       \
+    }                                                   \
+    char *get##tipo##Corb(tipo f)                       \
+    {                                                   \
+        return ((struct nomestruct *)f)->corb;          \
+    }                                                   \
+    char *get##tipo##Corp(tipo f)                       \
+    {                                                   \
+        return ((struct nomestruct *)f)->corp;          \
+    }                                                   \
+    void set##tipo##X(tipo f, double x)                 \
+    {                                                   \
+        ((struct nomestruct *)f)->x = x;                \
+    }                                                   \
+    void set##tipo##Y(tipo f, double y)                 \
+    {                                                   \
+        ((struct nomestruct *)f)->y = y;                \
+    }                                                   \
+    void set##tipo##Id(tipo f, double id)               \
+    {                                                   \
+        ((struct nomestruct *)f)->id = id;              \
+    }                                                   \
+    void set##tipo##Rotacao(tipo f, double rotacao)     \
+    {                                                   \
+        ((struct nomestruct *)f)->rotacao = rotacao;    \
+    }                                                   \
+    void set##tipo##Corb(tipo f, char *corb)            \
+    {                                                   \
+        ((struct nomestruct *)f)->corb = corb;          \
+    }                                                   \
+    void set##tipo##Corp(tipo f, char *corp)            \
+    {                                                   \
+        ((struct nomestruct *)f)->corp = corp;          \
     }
 
 _FORMA_DECLARAR_IMPLEMENTACAO(Circulo, circStruct)

@@ -8,7 +8,7 @@ typedef void *Retangulo;
 typedef void *Linha;
 typedef void *Texto;
 
-#define _FORMA_DECLARAR(tipo)                            \
+#define _FORMA_DECLARAR(tipo)                        \
     double get##tipo##X(tipo f);                     \
     double get##tipo##Y(tipo f);                     \
     double get##tipo##Id(tipo f);                    \
